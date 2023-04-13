@@ -11,7 +11,7 @@ const route: Route = {
     },
     {
       path: "/info",
-      method: "post",
+      method: "get",
       func: [UserController.getUserInfoById]
     }
   ]
