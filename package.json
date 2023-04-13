@@ -1,0 +1,25 @@
+{
+  "name": "yibo-admin-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon",
+    "build": "rm -rf ./dist && tsup ./src/main.ts --format cjs,esm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "yibo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
