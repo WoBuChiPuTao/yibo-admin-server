@@ -5,11 +5,11 @@ class UserController {
   private service: UserService = new UserService();
 
   login: RequestHandler = async (req, res) => {
-    res.send(await this.service.login());
+    res.send(await this.service.login(req.body.userName, req.body.password));
   };
 
-  getUserInfoById: RequestHandler = async (req, res) => {
-    res.send(await this.service.getUserInfoById());
+  getMenuByRole: RequestHandler = async (req, res) => {
+    res.send(await this.service.getMenuByRole(req.body.role));
   };
 }
 

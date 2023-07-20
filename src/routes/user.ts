@@ -10,9 +10,9 @@ const route: Route = {
       func: [UserController.login]
     },
     {
-      path: "/info",
-      method: "get",
-      func: [UserController.getUserInfoById]
+      path: "/menu",
+      method: "post",
+      func: [UserController.getMenuByRole]
     }
   ]
 };

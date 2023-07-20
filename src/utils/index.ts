@@ -3,7 +3,21 @@ export class Result {
     return {
       code: 200,
       message: "success",
-      data
+      data,
+    };
+  }
+
+  static error401(message: any) {
+    return {
+      code: 401,
+      message,
+    };
+  }
+
+  static error404(message: any) {
+    return {
+      code: 404,
+      message,
     };
   }
 }
